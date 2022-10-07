@@ -72,8 +72,7 @@ stages:
   jobs:
   - job: PublishImage
     displayName: 'Publish Docker Image'
-    pool:
-      vmImage: 'Ubuntu 18.04'
+    pool: default
     steps:
     - download: current
       artifact: Executable
