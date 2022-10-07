@@ -106,8 +106,7 @@ stages:
   jobs:
   - job: PublishToAzure
     displayName: 'Publish App to Azure'
-    pool:
-      vmImage: 'Ubuntu 18.04'
+    pool: default
     steps:
     - task: AzureResourceGroupDeployment@2
       inputs:
